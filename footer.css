@@ -1,0 +1,24 @@
+/* Sørg for at html og body fylder hele højden */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Gør body til en flex-container med kolonne-layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Footer styling – ingen fixed positioning */
+footer {
+    background-color: #6D41A1;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    position: relative; /* Sørger for, at footer følger dokumentflowet */
+}

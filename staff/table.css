@@ -1,0 +1,65 @@
+#active {
+    border-color: #549cc4;
+}
+
+#table-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+.inner-container {
+    margin: 0 auto;
+    width: fit-content;
+}
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.nav-buttons a {
+    background-color: #6D41A1;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    display: inline-block;
+
+}
+.nav-buttons a:hover {
+  background-color: #B19BD9;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+tbody td {
+    text-align: left;
+    font-size: 14px;
+    padding: 16px;
+    max-width: 120px;
+    overflow: hidden;
+}
+thead td{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #B19BD9;
+}
+tr:nth-child(even):hover{
+    background-color: #B19BD9;
+}

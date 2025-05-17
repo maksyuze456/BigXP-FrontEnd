@@ -9,3 +9,11 @@ fetch('footer.html')
         .then(data => {
         document.getElementById('footer').innerHTML = data;
         });          
+
+const activities = fetchActivities();
+
+async function fetchActivities() {
+        let response = await fetch('http://localhost:8080/activites');
+        let data = await response.json();
+        return data;
+}

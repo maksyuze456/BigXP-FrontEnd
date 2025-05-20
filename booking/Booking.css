@@ -1,0 +1,133 @@
+:root {
+    --primary: #6d41a1;
+    --secondary: #f3e5f5;
+    --text: #333;
+    --bg: #fff;
+    --edit-border: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--secondary);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary);
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.form-group button:hover {
+    background: #5a005a;
+    transform: translateY(-2px);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: var(--primary);
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #faf2ff;
+}
+
+/* Knapper */
+.action-btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: opacity 0.2s;
+}
+
+.action-btn:hover {
+    opacity: 0.85;
+}
+
+/* Rediger-knap: hvid med sort kant og sort tekst */
+.edit-btn {
+    background: #fff;
+    color: #000;
+    border: 1px solid var(--edit-border);
+}
+
+/* Slet-knap: lilla med hvid tekst */
+.delete-btn {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+}

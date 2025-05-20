@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Management</title>
+    <link rel="stylesheet" href="Booking.css">
+</head>
+<body>
+<div class="container">
+    <h1>Booking Management</h1>
+
+
+    <div class="section" id="search-section">
+        <h2>Søg booking</h2>
+        <div class="form-group">
+            <input type="number" id="searchId" placeholder="Booking ID">
+            <button id="searchButton">Søg</button>
+        </div>
+    </div>
+
+
+    <div class="section" id="create-section">
+        <h2>Opret / Opdater booking</h2>
+        <div class="form-group">
+            <input type="hidden" id="bookingId">
+            <input type="text" id="name" placeholder="Navn" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="number" id="telefon" placeholder="Telefon" required>
+            <input type="number" id="activityId" placeholder="Aktivitets-ID" required>
+            <button id="submitButton">Opret</button>
+        </div>
+    </div>
+
+    <div class="section" id="list-section">
+        <h2>Alle bookinger</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Navn</th>
+                    <th>Email</th>
+                    <th>Telefon</th>
+                    <th>Aktivitet</th>
+                    <th>Handlinger</th>
+                </tr>
+                </thead>
+                <tbody id="booking-table-body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="booking.js"></script>
+</body>
+</html>
